@@ -1,11 +1,145 @@
 <!DOCTYPE>
+{% load staticfiles %}
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static 'css/mystyle.css'%}">
     <title>My Web App</title>
 </head>
 <body>
-<h1>
-    This is my web page
-</h1>
+<div class="container">
+    <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-2 bd-highlight logo"><img src="{% static 'image/logo.png'%}" width="120px" height="120px"></div>
+        <div class="p-2 bd-highlight align-self-center"><h3>CONSULTADD PROJECT E-COMMERCE</h3></div>
+        <div class="p-2 bd-highlight align-self-center">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="far fa-user-circle"></i>
+        </div>
+    </div>
+</div>
+
+<div class="container head">
+    <div class="row">
+        <div class="col-md-2">
+            <p>1-24 of 1,156</p>
+        </div>
+        <div class="col-md-5">
+            <p>Home & Kitchen: Large Appliances: Washing Machines</p>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-3">
+            <p class="d-inline">Sort by</p>
+             <div class="dropdown d-inline">
+                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     New & Popular
+                 </button>
+             </div>
+        </div>
+        <div class="col-md-1">
+            <i class="fas fa-list"></i>
+            <i class="fas fa-th"></i>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <div class="product">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p>PRODUCT1</p>
+                    </div>
+                    <div class="col-md-2">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="{% static 'image/electronic.jpg'%}" width="290px" height="300px">
+                </div>
+                <div class="row">
+                    <h6>ELECTRONICS</h6>
+                </div>
+                <div class="row">
+                    <p><strike>$42</strike>&nbsp &nbsp$30.90</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <button type="button" class="btn btn-secondary"><i class="fas fa-shopping-bag"></i>&nbsp &nbspBuy Now</button>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-share-alt-square" style="font-size: 40px"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="product">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p>PRODUCT2</p>
+                    </div>
+                    <div class="col-md-2">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="{% static 'image/fashion.jpg'%}" width="290px" height="300px">
+                </div>
+                <div class="row">
+                    <h6>FASHION</h6>
+                </div>
+                <div class="row">
+                    <p><strike>$42</strike>&nbsp &nbsp$30.90</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <button type="button" class="btn btn-secondary"><i class="fas fa-shopping-bag"></i>&nbsp &nbspBuy Now</button>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-share-alt-square" style="font-size: 40px"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col-md">
+             <div class="product">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p>PRODUCT3</p>
+                    </div>
+                    <div class="col-md-2">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="{% static 'image/toy.jpg'%}" width="290px" height="300px">
+                </div>
+                <div class="row">
+                    <h6>TOYS</h6>
+                </div>
+                <div class="row">
+                    <p><strike>$42</strike>&nbsp &nbsp$30.90</p>
+                </div>
+             </div>
+             <div class="container">
+                 <div class="row">
+                     <div class="col-md-8">
+                         <button type="button" class="btn btn-secondary"><i class="fas fa-shopping-bag"></i>&nbsp &nbspBuy Now</button>
+                     </div>
+                     <div class="col-md-4">
+                         <i class="fas fa-share-alt-square" style="font-size: 40px"></i>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </div>
+</div>
 </body>
 </html>
